@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>Yasufumi Saito</title>
 	<meta name="author" content="Yasufumi Saito" />
 	<meta name="description" content="Yasufumi Saito's portfolio site" />
@@ -79,7 +80,8 @@
 	}
 
 	.workImg {
-		width:600px;
+		width:81%;
+		border-radius:10px;
 	}
 
 	.workImg:hover {
@@ -177,16 +179,18 @@
 		color:#EB3349;
 	}
 
-	
-
-	@media (min-width: 400px){
-		/*.description {
-			width:60%;
+	@media screen and (min-width: 981px){
+		.description {
+			width:45%;
+			padding: 1.5%;
 		}
 		.description p {
-			font-size: 1.5em;
-		}*/
-
+			font-size: 1.8em;
+		}
+		.workImg {
+		width:45%;
+		}
+		
 	}
 
 
@@ -200,16 +204,20 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="jquery.slimscroll.min.js"></script>
+	<!-- // <script type="text/javascript" src="jquery.slimscroll.min.js"></script> -->
 	<script type="text/javascript" src="jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="examples.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['1', '2', '3','4','5'],
+				anchors: ['1', '2', '3','4'],
 				sectionsColor: ['#8FB98B',"#2c3e50",'#DE564B',"#2c3e50"],
 				slidesNavigation: true,
+				scrollingSpeed:600,
+				continuousVertical: true,
+				responsiveWidth: 1,
+				// resize : true,
 			});
 		});
 	</script>
