@@ -2,227 +2,28 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>Yasufumi Saito</title>
 	<meta name="author" content="Yasufumi Saito" />
 	<meta name="description" content="Yasufumi Saito's portfolio site" />
 	<meta name="keywords"  content="Yasufumi, Saito, 斎藤康史, data, visualization, journalism, innovation, interactive, business, reporting" />
 	<meta name="Resource-type" content="Document" />
 	<link rel="shortcut icon" href="imgs/favicon-bar-chart.ico" />	
-	<link rel="stylesheet" type="text/css" href="jquery.fullpage.min.css" />
-	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">	
-	<style>
-	@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
-	/* Style for our header texts
-	* --------------------------------------- */
-	body {
-		background: #2c3e50;
-	}
-	h1{
-		font-size: 5.5em;
-		font-family: "Roboto", helvetica;
-		font-weight: 900;
-		color: #fff;
-		margin:0;
-	}
-
-	h2 {
-		font-size:4em;
-		font-family: "Roboto", helvetica;
-		font-weight: 100;
-		margin:0 auto;
-		color: #fff;
-		width:80%;
-		text-align: left;
-
-	}
-	h3 {
-		font-size:3em;
-		font-family: "Roboto", helvetica;
-		font-weight: 900;
-		margin:0 auto;
-		width:100%;
-		text-align: center;
-		color:#fff;
-	}
-
-	#slide9 h3 {
-		width:80%;
-		text-align: left;
-	}
-	p {
-		font-family: "Roboto", helvetica;
-		font-weight: 100;
-		font-size: 2.5em;
-		color: #fff;
-		text-align: left;
-		margin:0 auto;
-	}
-	.intro p{
-		color: #fff;
-		width:100%;		
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-
-	/* Overwriting styles for the navigation dots (to place it where we want)
-	* --------------------------------------- */
-	.fp-slidesNav.bottom{
-		bottom: 25px;
-		color:#fff;
-	}
-
-	.workImg {
-		width:81%;
-		border-radius:10px;
-	}
-
-	.workImg:hover {
-		opacity:.7;
-		-webkit-transition: all .5s ease-in-out;
-		   -moz-transition: all .5s ease-in-out;
-		    -ms-transition: all .5s ease-in-out;
-		     -o-transition: all .5s ease-in-out;
-		        transition: all .5s ease-in-out;
-	}
-
-	#section0 {
-		background: #EB3349; /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-		text-align: left;
-		padding-left: 5%;
-	}
-
-	#section2 {
-		background: #02AAB0; /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
-	}
-
-	/*typed.js*/
-	.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-	}
-	@keyframes blink{
-	    0% { opacity:1; }
-	    50% { opacity:0; }
-	    100% { opacity:1; }
-	}
-	@-webkit-keyframes blink{
-	    0% { opacity:1; }
-	    50% { opacity:0; }
-	    100% { opacity:1; }
-	}
-	@-moz-keyframes blink{
-	    0% { opacity:1; }
-	    50% { opacity:0; }
-	    100% { opacity:1; }
-	}
-	#typed, .typed-cursor {
-		font-size:3.3em;
-		font-family: "Roboto", helvetica;
-		font-weight: 100;
-		margin:0 auto;
-		color: #fff;
-	}
-	strong {
-		color:#3349eb;
-	}
-	/*typed.js*/
-
-	.description {
-		background:rgba(0,0,0,0.3);
-		margin:2% auto;
-		padding: 3%;
-		border-radius:10px;
-		width:75%;
-	}
-	.fa {
-		color:#EB3349;
-	}
-	h3 span {
-		color:#EB3349;
-	}
-
-	#credit {
-		font-family: helvetica;
-		position:absolute;
-		bottom:25px;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;	
-		color:white;	
-		z-index:1;
-		font-size: .4em;
-	}
-
-	#credit p {
-		text-align: center;
-	}
-
-	li {
-		margin:2%;
-	}
-	p a {
-		color:#EB3349;
-	}
-
-	@media screen and (min-width: 981px){
-		.description {
-			width:45%;
-			padding: 1.5%;
-		}
-		.description p {
-			font-size: 1.8em;
-		}
-		.workImg {
-		width:45%;
-		}
-		
-	}
-
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-animation.min.css">	
 
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
-	<![endif]-->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<!-- // <script type="text/javascript" src="jquery.slimscroll.min.js"></script> -->
-	<script type="text/javascript" src="jquery.fullpage.min.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['1', '2', '3','4'],
-				sectionsColor: ['#8FB98B',"#2c3e50",'#DE564B',"#2c3e50"],
-				slidesNavigation: true,
-				scrollingSpeed:600,
-				continuousVertical: true,
-			});
-		});
-	</script>
-
+	<![endif]-->	
 </head>
 <body>
 
+<!-- Initiating fullpage.js -->
 <div id="fullpage">
 	
 	<!-- First page -->
@@ -256,7 +57,7 @@
 						<ol>
 							<li><p><i class="fa fa-tag fa-1x faa-spin animated-hover"></i> Data Visualization Map</p></li>
 							<li><p><i class="fa fa-info-circle fa-1x faa-spin animated-hover"></i> Mapped the economic indices for 1741 municipalities</p></li>
-							<li><p><i class="fa fa-code fa-1x faa-spin animated-hover"></i> D3.js, MapboxGL.js, TopoJSON, QGIS</p></li>
+							<li><p><i class="fa fa-code fa-1x faa-spin animated-hover"></i> D3.js, MapboxGL.js, GeoJSON, QGIS</p></li>
 						</ol>
 				</div>	 
 		</div>
@@ -390,10 +191,11 @@
 		<div class="intro">
 			<a href="imgs/Resume.pdf" target="_blank"><h1>Need Resume?</h1></a>
 		      <div class="social">
+		        <a href="https://www.facebook.com/yasufumi.saito.35" target="_blank"><i class="fa fa-facebook-official fa-5x faa-pulse animated-hover"></i></a>
 		        <a href="https://twitter.com/yas104" target="_blank"><i class="fa fa-twitter fa-5x faa-pulse animated-hover"></i></a>
-		        <a href="https://www.linkedin.com/pub/yasufumi-saito/a7/653/937" target="_blank"><i class="fa fa-linkedin fa-5x faa-pulse animated-hover"></i></a>
+		        <a href="https://www.linkedin.com/pub/yasufumi-saito/a7/653/937" target="_blank"><i class="fa fa-linkedin-square fa-5x faa-pulse animated-hover"></i></a>
 		        <a href="https://github.com/YasufumiSaito" target="_blank"><i class="fa fa-github fa-5x faa-pulse animated-hover"></i></a>
-		        <a href="https://medium.com/@yasufumisaito" target="_blank"><i class="fa fa-medium fa-5x faa-pulse animated-hover"></i></a>
+		        <a href="mailto:yasu@u.northwestern.edu"><i class="fa fa-envelope-square fa-5x faa-pulse animated-hover"></i></a>
       		  </div>
         </div>
         <div id="credit">
@@ -402,6 +204,38 @@
 	</div>
 
 </div>
+	
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['1', '2', '3','4'],
+				sectionsColor: ['#8FB98B',"#2c3e50",'#DE564B',"#2c3e50"],
+				slidesNavigation: true,
+				scrollingSpeed:600,
+				continuousVertical: true,
+			});
+		});
+	</script>
+	<!-- Typed.js -->
+	<script src="js/typed.min.js"></script>
+	<script>
+		$(function(){
+			$("#typed").typed({
+				stringsElement: $('#typed-strings'),
+				contentType:"html",
+				typeSpeed:20,
+				startDelay: 50,
+				backSpeed: 50,
+				backDelay: 1500,
+				showCursor:true,
+				loop:true
+			})
+		});
+	</script>
 	<!-- Particle Slider -->
     	 <!-- // <script src="particleslider-current.min.js"></script> -->
 	    <!-- //   <script type="text/javascript"> -->
@@ -419,22 +253,6 @@
 	    //         ptl.velocityY += 10;
 	    //         ptl.gravityX = 10;
 	    //         ptl.gravityY = 10; -->
-	       <!-- </script> -->
-	<!-- Typed.js -->
-	<script src="typed.min.js"></script>
-	<script>
-		$(function(){
-			$("#typed").typed({
-				stringsElement: $('#typed-strings'),
-				contentType:"html",
-				typeSpeed:20,
-				startDelay: 50,
-				backSpeed: 50,
-				backDelay: 1500,
-				showCursor:true,
-				loop:true
-			})
-		});
-	</script>
+	       <!-- </script> -->	
 </body>
 </html>
