@@ -113,6 +113,7 @@ abbr,acronym { border: 0;
     .workImg {
         width:81%;
         border-radius:10px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
     }
 
     .workImg:hover {
@@ -211,6 +212,30 @@ abbr,acronym { border: 0;
         color:#EB3349;
     }
 
+    .story h2 {
+        
+        font-weight: 100;
+        text-align:left;
+        width:80%;
+        font-size: 2.5em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .story img {
+        width:80%;
+        border-radius:5px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    }
+
+    .hidden {
+        display:none;
+    }
+    .story strong{
+        cursor: pointer;
+    }
+
+
     @media screen and (min-width: 981px){
         .description {
             width:45%;
@@ -222,5 +247,8 @@ abbr,acronym { border: 0;
         .workImg {
         width:45%;
         }
+        .story img {
+        width:45%;
+    }
         
     }
