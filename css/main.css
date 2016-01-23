@@ -237,6 +237,22 @@ abbr,acronym { border: 0;
         display:none;
     }
 
+    figcaption {
+        color:#fff;
+        font-size: .8em;
+        margin-top: 5px;
+    }
+
+    figure {
+        margin:0;
+        padding:0;
+    }
+
+    #storySlide8 img {
+        width:40%;
+        box-shadow:none;
+    }
+
 
     @media screen and (min-width: 981px){
         .description {
@@ -251,6 +267,9 @@ abbr,acronym { border: 0;
         }
         .story img {
         width:45%;
-    }
+        }
+        #storySlide8 img {
+        width:25%;
+        }
         
     }
