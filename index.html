@@ -70,7 +70,7 @@
 					<br/>
 						<ol>
 							<li><p><i class="fa fa-tag fa-1x faa-spin animated-hover"></i> Data Visualization</p></li>
-							<li><p><i class="fa fa-info-circle fa-1x faa-spin animated-hover"></i> illustrated how personal consumption changed over time</p></li>
+							<li><p><i class="fa fa-info-circle fa-1x faa-spin animated-hover"></i> illustrated how personal consumption changed over the past 35 years</p></li>
 							<li><p><i class="fa fa-code fa-1x faa-spin animated-hover"></i> D3.js, jQuery</p></li>
 						</ol>
 				</div>
@@ -190,7 +190,7 @@
 		</div>
 		<div class="slide" id="storySlide6" data-anchor="slide6">
 			<div class="story">
-				<img id="photo5" class="hidden" src="https://i.giphy.com/24zuF16XuyVYA.gif">
+				<img id="photo5" class="hidden" src="imgs/economy.gif">
 	    		<h3>and some <strong id="switch5" class="faa-float animated">Economy</strong> stuff.</h3>
 	    	</div>
 		</div>
@@ -213,8 +213,8 @@
 	</div>
 
 	<!-- Contact -->
-	<div class="section" id="section3">
-		<div class="intro">
+	<div class="section" id="particles-js">
+		<div id="contact" class="intro">
 			<a href="imgs/Resume.pdf" target="_blank"><h1>Need Resume?</h1></a>
 		      <div class="social">
 		        <a href="https://www.facebook.com/yasufumi.saito.35" target="_blank"><i class="fa fa-facebook-official fa-5x faa-pulse animated-hover"></i></a>
@@ -225,8 +225,8 @@
       		  </div>
         </div>
         <div id="credit">
-		    <p>Yasufumi Saito &copy; 2016</p>
-		</div>
+			<p>Yasufumi Saito &copy; 2016</p>
+		</div> 
 	</div>
 
 </div>
@@ -235,58 +235,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['1', '2', '3','4'],
-				sectionsColor: ['#8FB98B',"#2c3e50",'#DE564B',"#2c3e50"],
-				slidesNavigation: true,
-				scrollingSpeed:600,
-				continuousVertical: true,
-			});
-		});
-	</script>
-	<!-- Typed.js -->
-	<script src="js/typed.min.js"></script>
-	<script>
-		$(function(){
-			$("#typed").typed({
-				stringsElement: $('#typed-strings'),
-				contentType:"html",
-				typeSpeed:20,
-				startDelay: 50,
-				backSpeed: 50,
-				backDelay: 1500,
-				showCursor:true,
-				loop:true
-			})
-		});
-
-	// Story interactivities
-	$(function(){
-		$("#switch0").click(function(){
-			$("#photo0").removeClass('hidden');
-		});
-		$("#switch1").click(function(){
-			$("#photo1").removeClass('hidden');
-		});	
-		$("#switch2").click(function(){
-			$("#photo2").removeClass('hidden');
-		});
-		$("#switch3").click(function(){
-			$("#photo3").removeClass('hidden');
-		});
-		$("#switch4").click(function(){
-			$("#photo4").removeClass('hidden');
-		});
-		$("#switch5").click(function(){
-			$("#photo5").removeClass('hidden');
-		});
-		$("#switch6").click(function(){
-			$("#photo6").removeClass('hidden');
-		});
-	});	
-
-	</script>
+	<script type="text/javascript" src="js/typed.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
