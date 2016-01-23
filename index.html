@@ -7,6 +7,21 @@
 	<meta name="description" content="Yasufumi Saito's portfolio site" />
 	<meta name="keywords"  content="Yasufumi, Saito, 斎藤康史, data, visualization, journalism, innovation, interactive, business, reporting" />
 	<meta name="Resource-type" content="Document" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+		  var h = $(window).height();		 
+		  $("#fullpage").hide();
+		  $('#loader ,#loader-inside').height(h).css('display','block');
+		});
+		$(document).ready(function(){
+		  $('#loader').delay(900).fadeOut(800);
+		  $('#loader-inside').delay(600).fadeOut(300);
+		  $("#fullpage").show();
+	    }); 	
+	</script>	
+	<link rel="stylesheet" type="text/css" href="css/loader.css"/>
 	<link rel="shortcut icon" href="imgs/favicon-bar-chart.ico" />	
 
 	<!-- CSS -->
@@ -23,6 +38,17 @@
 
 </head>
 <body>
+<!-- Preloader -->
+<div id="loader">
+	<div id="loader-inside">
+		<div class="cssload-thecube">
+			<div class="cssload-cube cssload-c1"></div>
+			<div class="cssload-cube cssload-c2"></div>
+			<div class="cssload-cube cssload-c4"></div>
+			<div class="cssload-cube cssload-c3"></div>
+		</div>
+	</div>	
+</div>
 
 <!-- Initiating fullpage.js -->
 <div id="fullpage">
@@ -232,12 +258,11 @@
 </div>
 	
 	<!-- JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="js/typed.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/particles.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<!-- <script type="text/javascript" src="js/particles.min.js"></script>
+	     <script type="text/javascript" src="js/app.js"></script> -->
 </body>
 </html>
